@@ -7,10 +7,10 @@ body {
     margin: 0;
 }
 
-.calculator {
-    background-color: #977b3d;
+.calcu_box {
+    background-color: #332e24;
     font-family: Arial, sans-serif;
-    font-weight: semi-bolder;
+    font-weight: bold;
     border-radius: 12px;
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -18,7 +18,7 @@ body {
     height: 500px; 
 }
 
-.display {
+.dsply {
     background-color: #e0f2fe;
     border-radius: 0.5rem;
     padding: 0.5rem;
@@ -26,10 +26,14 @@ body {
     font-size: 2rem; 
     margin-bottom: 1rem;
     height: 3rem; 
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 10px;
 }
 
-.solar-panel {
-    background-color: #9ca3af;
+.top_panel {
+    background-color: #d7f04d;
     height: 1rem;
     border-radius: 0.25rem;
     margin-bottom: 0.5rem;
@@ -50,12 +54,32 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     cursor: pointer; 
     transition: background-color 0.2s; 
-    height: 60px;
-     
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .button:hover {
-    background-color: #fcd34d
+    background-color: #fcd34d;
 }
 
+.button.operator {
+    background-color: #facc15;
+}
 
+.clear_btn, .backspace_btn {
+    background-color: #d7f04d;
+    height: 60px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clear_btn {
+    grid-column: span 2; 
+}
+
+.backspace_btn {
+    grid-column: span 2; 
+}
